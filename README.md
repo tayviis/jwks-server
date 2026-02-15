@@ -49,7 +49,7 @@ go test -cover
 
 Current coverage: 80.6%
 ## Test Client Running Against Server
-![Client Test](Client Test.png)
+![Client Test](client-test.png)
 
 ## Test Suite Coverage
 ![Coverage](Coverage.png)
