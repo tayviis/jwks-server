@@ -11,7 +11,16 @@ What does it do?:
 - Issues JWTs via `/auth`
 - Supports expired JWTs using `?expired=true`
 
-## Endpoints
+## Examples
+
+Generate valid JWT:
+curl -X POST http://localhost:8080/auth
+
+Generate expired JWT:
+curl -X POST http://localhost:8080/auth?expired=true
+
+View JWKS:
+curl http://localhost:8080/.well-known/jwks.json
 
 ### GET /.well-known/jwks.json
 Returns the active public key in JWKS format.
@@ -31,3 +40,11 @@ go run main.go
 go test -cover
 
 Current test coverage: 80.6%
+
+## Test Coverage
+
+Run:
+
+go test -cover
+
+Current coverage: 80.6%
